@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  jekyll:
+    image: raveious/jekyll-website
+    volumes:
+      - .:/site
+    ports:
+      - '4000:4000'
+    env_file:
+      - ./.env
+    environment:
+      - TARGET_REPO=https://github.com/trianglefraternitymtu/blackbook.git
+      - TARGET_BRANCH=master
