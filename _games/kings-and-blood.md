@@ -7,7 +7,7 @@ supplies:
   - 1 cup
   - Beer or drink of choice
 ---
-Super simple betting game, similar to the dice game [Sixes]({% link _games/sixes.md %}).
+Super simple betting game, similar to the dice game [Sixes]({{ site.baseurl }}{% link _games/sixes.md %}).
 
 Shuffle the deck of cards, place them face down on the table. Place the cup in the center (clear a space if need be). Players take turns drawing cards.
 

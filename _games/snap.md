@@ -5,7 +5,7 @@ supplies:
   - Deck of Cards
   - Beer or drink of choice
 ---
-A fast-paced game like [Thumper]({% link _games/thumper.md %}) or [Zoomie Zoomie]({% link _games/zoomie-zoomie.md %}), played with cards. If you've played Egyptian Rat Screw, you can play this.
+A fast-paced game like [Thumper]({{ site.baseurl }}{% link _games/thumper.md %}) or [Zoomie Zoomie]({{ site.baseurl }}{% link _games/zoomie-zoomie.md %}), played with cards. If you've played Egyptian Rat Screw, you can play this.
 
 Best played with a large number of people (for obvious reasons).
 One person is designated as the dealer. (This person should be changed every round because the dealer is at a distinct disadvantage. Some people play that the dealer does not play on his/her turn.)

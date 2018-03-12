@@ -8,7 +8,7 @@ layout: home
 # {{ gameType | capitalize }} Games
   {% for game in site.games %}
     {% if game.categories contains gameType %}
-  - [{{ game.title }}]({{ game.url | prepend: site.baseurl }})
+  - [{{ game.title }}]({{ game.url | relative_url }})
     {% endif %}
   {% endfor %}
 {% endfor %}
@@ -17,6 +17,6 @@ layout: home
 # Other Games
 {% for game in site.games %}
   {% if game.categories == empty %}
-  - [{{ game.title }}]({{ game.url | prepend: site.baseurl }})
+  - [{{ game.title }}]({{ game.url | relative_url }})
   {% endif %}
 {% endfor %}
