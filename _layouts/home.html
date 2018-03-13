@@ -5,8 +5,44 @@
   <body id="page-top">
     {% include nav.html %}
     <main role="main" class="container mt-3">
-      <h1>home</h1>
-      {{ content }}
+      <div class="page-header">
+        {{ content }}
+      </div>
+      <div class="card-columns">
+        {% assign categories = site.games | map: "categories" | uniq | sort %}
+        {% unless categories == empty %}
+        {% for gameType in categories %}
+        <div class="card">
+          <h5 class="card-header">{{ gameType | capitalize }} Games</h5>
+          <ul class="list-unstyled list-group list-group-flush">
+          {% for game in site.games %}
+            {% if game.categories contains gameType %}
+            <li class="list-group-item"><a href="{{ game.url | relative_url }}" >{{ game.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+        {% endunless %}
+        {% assign otherGames = false %}
+        {% for game in site.games %}
+          {% if game.categories == empty %}
+          {% assign otherGames = true %}
+          {% endif %}
+        {% endfor %}
+        {% if otherGames %}
+        <div class="card">
+          <h5 class="card-header">Uncategorized Games</h5>
+          <ul class="list-unstyled list-group list-group-flush">
+          {% for game in site.games %}
+            {% if game.categories == empty %}
+            <li class="list-group-item"><a href="{{ game.url | relative_url }}" >{{ game.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
     </main>
     {% include footer.html %}
     {% include scripts.html %}
