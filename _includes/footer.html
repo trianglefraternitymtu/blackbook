@@ -1,5 +1,15 @@
 <footer class="footer">
   <div class="container">
-    <p>View this page on <a href="https://github.com/{{ site.github.repository_nwo }}/blob/master/{{ page.path }}">GitHub</a></p>
+    <div class="row">
+      <div class="col-md-4">
+        <p>Currently tracking {{ site.games | size }} games.</p>
+      </div>
+      <div class="col-md-4">
+        <p>View this page on <a href="https://github.com/{{ site.github.repository_nwo }}/blob/master/{{ page.path }}">GitHub</a></p>
+      </div>
+      <div class="col-md-4">
+        <p><a href="{{ site.baseurl }}{% link about.md %}">About</a></p>
+      </div>
+    </div>
   </div>
 </footer>
