@@ -18,4 +18,4 @@ Example rules:
 - Inside Joke: rules cannot be taught you must learn by playing
 - Mute: all numbers must be conveyed by hand sign or nonverbal means
 - Think of the children!: No swearing
-- etc etc etc etc
+- More rule ideas can be found [here]({{ site.baseurl }}{% link custom-rules.md %}).

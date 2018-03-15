@@ -30,4 +30,4 @@ Social | Everybody drinks!
 Not it! | Do not read this out loud. The last person to touch their finger to their nose takes a drink.
 Drinking Buddy | Pick a partner to drink with you for your next drink.
 Bartender | You are the bartender until the end of the game or until someone else pulls the Bartender block. (This means you refresh empty drinks for people)
-Rule Maker | Make a rule that persists for the rest of the game, or until repealed.
+Rule Maker | Make a rule that persists for the rest of the game, or until repealed. Rule ideas can be found [here]({{ site.baseurl }}{% link custom-rules.md %}).

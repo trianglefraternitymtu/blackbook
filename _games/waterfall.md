@@ -28,7 +28,7 @@ Card | Action | Description
 10 | Categories | Player names a category (e.g. college football teams) and players go around the circle naming things in that category. First one to not come up with something that fits the category has to drink.
 Jack | Thumb Master | Player can, at anytime, place their thumb on the table. The last player to put their thumb on the table drinks.
 Queen | Question Master | Player man ask a question at any time. If anyone responds in any manner other than with a question, they must drink.
-King | Make a rule | Player makes a rule that persists until the end of the game. The ability to remove previous rules is optional, and is up to the group to decide.
+King | Make a rule | Player makes a rule that persists until the end of the game. The ability to remove previous rules is optional, and is up to the group to decide. Rule ideas can be found [here]({{ site.baseurl }}{% link custom-rules.md %}).
 Ace | Waterfall | Player begins drinking. Players follow suit around the circle, and cannot stop until the previous player does.
 
 *Optional rule for Aces*: The person drawing the ace decides which direction the waterfall goes around the circle by asking a general knowledge question (that anyone sitting at the table SHOULD know) to the two people next to him/her. The person who answers the question correctly first gets the waterfall started in their direction, and the loser thus has to drink longest.
