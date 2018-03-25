@@ -12,6 +12,12 @@ There is a little green man sitting on the top of your cup. If you don't remove 
 ## In my ass
 Whenever anyone speaks, they must end whatever they said with the phrase "in my ass."
 
+## My dude
+Whenever anyone speaks, they must end whatever they said with the phrase "my dude."
+
+## Proper Insults
+Starting now, you can no longer refer to people by their name. Instead, you replace their name with an insult.
+
 ## Inside Joke
 Rules cannot be taught to new players, they must learn by playing.
 

@@ -1,13 +1,16 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-3">
+        <p>View this page on <a href="{{ site.github.repository_url }}/blob/master/{{ page.path }}">GitHub</a></p>
+      </div>
+      <div class="col-md-3">
         <p>Currently tracking {{ site.games | size }} games.</p>
       </div>
-      <div class="col-md-4">
-        <p>View this page on <a href="https://github.com/{{ site.github.repository_nwo }}/blob/master/{{ page.path }}">GitHub</a></p>
+      <div class="col-md-3">
+        <p><a href="{{ site.baseurl }}{% link custom-rules.md %}">Custom Rule Ideas</a></p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <p><a href="{{ site.baseurl }}{% link about.md %}">About</a></p>
       </div>
     </div>
