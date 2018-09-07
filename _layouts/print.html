@@ -3,42 +3,44 @@
   {% include head.html %}
 
   <body id="page-top">
-    {% include nav.html %}
+    {% include sidenav.html %}
     <main role="main" class="container mt-3">
+      {% for game in site.games %}
       <div class="game">
         <div class="game-heading">
-          <h1>{{ page.title }}</h1>
-          {% if page.categories == empty %}
+          <h1>{{ game.title }}</h1>
+          {% if game.categories == empty %}
           <span class="badge badge-pill badge-primary">Other</span>
           {% else %}
-          {% for category in page.categories %}
+          {% for category in game.categories %}
           <span class="badge badge-pill badge-primary">{{ category | capitalize }}</span>
           {% endfor %}
           {% endif %}
-          {% if page.is-drinking-game %}
+          {% if game.is-drinking-game %}
           <span class="badge badge-pill badge-danger"><i class="fas fa-glass-martini"></i> Drinking</span>
           {% else %}
           <span class="badge badge-pill badge-success"><i class="fas fa-child"></i> No Drinking</span>
           {% endif %}
-          <h4>Players: {{ page.players }}</h4>
+          <h4>Players: {{ game.players }}</h4>
           <h4>Supplies:</h4>
           <ul>
-            {% for supply in page.supplies %}
+            {% for supply in game.supplies %}
             <li>{{ supply }}</li>
             {% endfor %}
           </ul>
           <hr/>
         </div>
         <div class="game-content">
-        {{ content }}
+          {{ game.content }}
         </div>
-        {% if page.is-drinking-game %}
+        {% if game.is-drinking-game %}
         <p class="warn"><i class="fas fa-exclamation-triangle"></i>
   			<strong>WARNING:</strong>
   			Consuming alcohol can be dangerous and drinking games often promote significant consumption. Know your limits. Drink responsibly and legally.
     		</p>
         {% endif %}
       </div>
+      {% endfor %}
     </main>
     {% include footer.html %}
     {% include scripts.html %}

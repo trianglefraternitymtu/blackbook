@@ -1,0 +1,12 @@
+.game {
+  @media print {
+    page-break-after: always;
+  }
+
+  .warn {
+    @media print {
+      position: fixed;
+      bottom: 0;
+    }
+  }
+}
