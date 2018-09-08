@@ -2,6 +2,10 @@
 footer {
   padding: 25px 0;
   text-align: center;
+  
+  @media print {
+    display: none;
+  }
 }
 
 .card.contributors {
@@ -24,5 +28,8 @@ footer {
     text-decoration: underline;
     &:hover {
     }
+  }
+  @media print {
+    display: none;
   }
 }

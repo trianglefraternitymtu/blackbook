@@ -1,0 +1,34 @@
+<div class="game">
+  <div class="game-heading">
+    <h1>{{ include.game.title }}</h1>
+    {% if include.game.categories == empty %}
+    <span class="badge badge-pill badge-primary">Other</span>
+    {% else %}
+    {% for category in include.game.categories %}
+    <span class="badge badge-pill badge-primary">{{ category | capitalize }}</span>
+    {% endfor %}
+    {% endif %}
+    {% if include.game.is-drinking-game %}
+    <span class="badge badge-pill badge-danger"><i class="fas fa-glass-martini"></i> Drinking</span>
+    {% else %}
+    <span class="badge badge-pill badge-success"><i class="fas fa-child"></i> No Drinking</span>
+    {% endif %}
+    <h4>Players: {{ include.game.players }}</h4>
+    <h4>Supplies:</h4>
+    <ul>
+      {% for supply in include.game.supplies %}
+      <li>{{ supply }}</li>
+      {% endfor %}
+    </ul>
+    <hr/>
+  </div>
+  <div class="game-content">
+    {{ include.game.content }}
+  </div>
+  {% if include.game.is-drinking-game %}
+  <p class="warn"><i class="fas fa-exclamation-triangle"></i>
+  <strong>WARNING:</strong>
+  Consuming alcohol can be dangerous and drinking games often promote significant consumption. Know your limits. Drink responsibly and legally.
+  </p>
+  {% endif %}
+</div>
