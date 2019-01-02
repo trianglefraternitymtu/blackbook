@@ -2,8 +2,7 @@
 categories:
   - card
 supplies:
-  - deck of cards
-  - table
+  - Deck of Cards
 ---
 # Setup
 1. Remove all the 7's from the deck of cards, and reshuffle the deck.

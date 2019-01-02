@@ -3,8 +3,7 @@ categories:
   - card
   - betting
 supplies:
-  - deck of cards
-  - table
+  - Deck of Cards
 ---
 This game does a good job of gathering people together to play a series of games in a row. A horse race is pretty straight forward and gets people excited to play more games.
 
